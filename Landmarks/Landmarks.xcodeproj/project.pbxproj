@@ -57,8 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				66A1D7332598A82B00A79F88 /* LandmarksApp.swift */,
-				66A1D74B2598B85100A79F88 /* Resources */,
 				66A1D74A2598B84100A79F88 /* Views */,
+				66A1D74B2598B85100A79F88 /* Resources */,
 				66A1D7392598A82C00A79F88 /* Preview Content */,
 			);
 			path = Landmarks;
