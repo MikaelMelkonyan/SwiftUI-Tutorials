@@ -8,7 +8,7 @@ https://developer.apple.com/tutorials/swiftui
 - Creating and Combining Views ✅
 ![](Readme/Creating%20and%20Combining%20Views.png)
 - Building Lists and Navigation ✅
-![](Readme/Building%20Lists%20and%20Navigation.mp4)
+![](Readme/Building%20Lists%20and%20Navigation.gif)
 - Handling User Input ⬜
 
 ## Drawing and Animation
