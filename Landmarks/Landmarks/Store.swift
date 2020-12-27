@@ -5,13 +5,16 @@
 //  Created by Mikael Melkonyan on 27.12.2020.
 //
 
+import Combine
+
 let store = Store()
 
-final class Store {
+final class Store: ObservableObject {
     
-    private lazy var loader = DataLoader()
+    @Published var landmarks: [Landmark]
+    private let loader = DataLoader()
     
-    lazy var landmarks: [Landmark] = {
-        loader.load("landmarkData.json")
-    }()
+    init() {
+        landmarks = loader.load("landmarkData.json")
+    }
 }
