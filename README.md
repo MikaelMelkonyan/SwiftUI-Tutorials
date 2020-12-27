@@ -7,7 +7,8 @@ https://developer.apple.com/tutorials/swiftui
 ## SwiftUI Essentials
 - Creating and Combining Views ✅
 ![](Readme/Creating%20and%20Combining%20Views.png)
-- Building Lists and Navigation ⬜
+- Building Lists and Navigation ✅
+![](Readme/Building%20Lists%20and%20Navigation.mov)
 - Handling User Input ⬜
 
 ## Drawing and Animation
