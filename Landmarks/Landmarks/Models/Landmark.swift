@@ -14,6 +14,7 @@ struct Landmark {
     let description: String
     let imageName: String
     let coordinates: Coordinates
+    let isFavorite: Bool
 }
 
 // MARK: - Decodable
