@@ -30,10 +30,12 @@ struct LandmarkRowView: View {
 }
 
 struct LandmarkRowView_Previews: PreviewProvider {
+    static let data = LandmarksData()
+    
     static var previews: some View {
         Group {
-            LandmarkRowView(landmark: store.landmarks[0])
-            LandmarkRowView(landmark: store.landmarks[1])
+            LandmarkRowView(landmark: data.landmarks[0])
+            LandmarkRowView(landmark: data.landmarks[1])
         }
         .previewLayout(.sizeThatFits)
     }

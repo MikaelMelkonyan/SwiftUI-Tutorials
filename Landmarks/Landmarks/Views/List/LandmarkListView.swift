@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LandmarkListView: View {
+    @EnvironmentObject private var data: LandmarksData
     @State private var showFavoritesOnly = false
     
     var body: some View {
@@ -36,7 +37,7 @@ struct LandmarkListView: View {
 private extension LandmarkListView {
     
     var filteredLandmarks: [Landmark] {
-        store.landmarks.filter {
+        data.landmarks.filter {
             !showFavoritesOnly || $0.isFavorite
         }
     }
@@ -50,6 +51,7 @@ struct LandmarkListView_Previews: PreviewProvider {
             "iPhone XS Max"
         ], id: \.self) {
             LandmarkListView()
+                .environmentObject(LandmarksData())
                 .previewDevice(PreviewDevice(rawValue: $0))
                 .previewDisplayName($0)
         }

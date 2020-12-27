@@ -50,7 +50,9 @@ struct LandmarkDetailsView: View {
 }
 
 struct LandmarkDetailsView_Previews: PreviewProvider {
+    static let data = LandmarksData()
+    
     static var previews: some View {
-        LandmarkDetailsView(landmark: store.landmarks[5])
+        LandmarkDetailsView(landmark: data.landmarks[5])
     }
 }
