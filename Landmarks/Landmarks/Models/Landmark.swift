@@ -7,14 +7,17 @@
 
 struct Landmark {
     
-    private let id: Int
+    let id: Int
     let name: String
-    private let park: String
-    private let state: String
-    private let description: String
+//    private let park: String
+//    private let state: String
+//    private let description: String
     let imageName: String
-    private let coordinates: Coordinates
+//    private let coordinates: Coordinates
 }
 
 // MARK: - Decodable
 extension Landmark: Decodable {}
+
+// MARK: - Identifiable
+extension Landmark: Identifiable {}
