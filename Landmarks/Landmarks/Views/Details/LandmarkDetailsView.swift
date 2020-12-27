@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LandmarkDetailsView.swift
 //  Landmarks
 //
 //  Created by Mikael Melkonyan on 27.12.2020.
@@ -7,26 +7,28 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LandmarkDetailsView: View {
+    let landmark: Landmark
+    
     var body: some View {
-        VStack {
-            MapView()
-                .frame(height: 300)
+        ScrollView {
+            MapView(coordinates: landmark.coordinates)
                 .ignoresSafeArea(edges: .top)
+                .frame(height: 300)
             
-            CircleImage()
+            CircleImage(imageName: landmark.imageName)
                 .offset(y: -130)
                 .padding(.bottom, -130)
             
             VStack(alignment: .leading) {
-                Text("Turtle Rock")
+                Text(landmark.name)
                     .font(.title)
                 
                 HStack {
-                    Text("Joshua Tree National park")
+                    Text(landmark.park)
                         .font(.subheadline)
                     Spacer()
-                    Text("California")
+                    Text(landmark.state)
                         .font(.subheadline)
                 }
                 .font(.subheadline)
@@ -34,22 +36,21 @@ struct ContentView: View {
                 
                 Divider()
                 
-                Text("About Turtle Rock")
+                Text("About \(landmark.name)")
                     .font(.title2)
-                Text("Descriptive text goes here.")
+                Text(landmark.description)
             }
             .padding()
             
             Spacer()
         }
+        .navigationTitle(landmark.name)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LandmarkDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            ContentView()
-                .preferredColorScheme(.dark)
-        }
+        LandmarkDetailsView(landmark: store.landmarks[5])
     }
 }

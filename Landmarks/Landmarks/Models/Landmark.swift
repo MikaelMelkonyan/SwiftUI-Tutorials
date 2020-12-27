@@ -9,11 +9,11 @@ struct Landmark {
     
     let id: Int
     let name: String
-//    private let park: String
-//    private let state: String
-//    private let description: String
+    let park: String
+    let state: String
+    let description: String
     let imageName: String
-//    private let coordinates: Coordinates
+    let coordinates: Coordinates
 }
 
 // MARK: - Decodable
