@@ -11,7 +11,7 @@
 		66A1D7362598A82B00A79F88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A1D7352598A82B00A79F88 /* ContentView.swift */; };
 		66A1D7382598A82C00A79F88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66A1D7372598A82C00A79F88 /* Assets.xcassets */; };
 		66A1D73B2598A82C00A79F88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66A1D73A2598A82C00A79F88 /* Preview Assets.xcassets */; };
-		66A1D7442598B6BC00A79F88 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A1D7432598B6BC00A79F88 /* CircleView.swift */; };
+		66A1D7442598B6BC00A79F88 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A1D7432598B6BC00A79F88 /* CircleImage.swift */; };
 		66A1D7472598B83B00A79F88 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A1D7462598B83B00A79F88 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
@@ -22,7 +22,7 @@
 		66A1D7372598A82C00A79F88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66A1D73A2598A82C00A79F88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		66A1D73C2598A82C00A79F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		66A1D7432598B6BC00A79F88 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		66A1D7432598B6BC00A79F88 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		66A1D7462598B83B00A79F88 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				66A1D7352598A82B00A79F88 /* ContentView.swift */,
-				66A1D7432598B6BC00A79F88 /* CircleView.swift */,
+				66A1D7432598B6BC00A79F88 /* CircleImage.swift */,
 				66A1D7462598B83B00A79F88 /* MapView.swift */,
 			);
 			path = Views;
@@ -160,7 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66A1D7442598B6BC00A79F88 /* CircleView.swift in Sources */,
+				66A1D7442598B6BC00A79F88 /* CircleImage.swift in Sources */,
 				66A1D7472598B83B00A79F88 /* MapView.swift in Sources */,
 				66A1D7362598A82B00A79F88 /* ContentView.swift in Sources */,
 				66A1D7342598A82B00A79F88 /* LandmarksApp.swift in Sources */,
