@@ -8,11 +8,11 @@
 struct Landmark {
     
     private let id: Int
-    private let name: String
+    let name: String
     private let park: String
     private let state: String
     private let description: String
-    private let imageName: String
+    let imageName: String
     private let coordinates: Coordinates
 }
 
