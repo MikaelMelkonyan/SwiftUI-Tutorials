@@ -5,11 +5,11 @@ https://developer.apple.com/tutorials/swiftui
 [![Swift 5.3.2](https://img.shields.io/badge/Swift-5.3.2-orange.svg)](https://github.com/MikaelMelkonyan/Intelity)
 
 ## SwiftUI Essentials
-- Creating and Combining Views ✅<br><br><br>
+- Creating and Combining Views ✅<br>
 ![](Readme/Creating%20and%20Combining%20Views.png)
-- Building Lists and Navigation ✅
+- Building Lists and Navigation ✅<br>
 ![](Readme/Building%20Lists%20and%20Navigation.gif)
-- Handling User Input ✅
+- Handling User Input ✅<br>
 ![](Readme/Handling%20User%20Input.gif)
 
 ## Drawing and Animation
