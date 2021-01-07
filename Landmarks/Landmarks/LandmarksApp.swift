@@ -13,8 +13,9 @@ struct LandmarksApp: App {
     
     var body: some Scene {
         WindowGroup {
-            LandmarkListView()
-                .environmentObject(LandmarksData())
+            BadgeView()
+//            LandmarkListView()
+//                .environmentObject(LandmarksData())
         }
     }
 }

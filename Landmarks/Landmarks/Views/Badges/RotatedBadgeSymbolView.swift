@@ -9,16 +9,22 @@ import SwiftUI
 
 struct RotatedBadgeSymbolView: View {
     let angle: Angle
+    let padding: CGFloat
+    
+    init(angle: Angle, padding: CGFloat = -60) {
+        self.angle = angle
+        self.padding = padding
+    }
     
     var body: some View {
         BadgeSymbolView()
-            .padding(-60)
-            .rotationEffect(angle)
+            .padding(padding)
+            .rotationEffect(angle, anchor: .bottom)
     }
 }
 
 struct RotatedBadgeSymbolView_Previews: PreviewProvider {
     static var previews: some View {
-        RotatedBadgeSymbolView(angle: Angle(degrees: 5))
+        RotatedBadgeSymbolView(angle: Angle(degrees: 0))
     }
 }

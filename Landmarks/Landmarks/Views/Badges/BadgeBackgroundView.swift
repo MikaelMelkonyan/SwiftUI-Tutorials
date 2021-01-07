@@ -48,7 +48,7 @@ struct BadgeBackgroundView: View {
             }
             .fill(BadgeBackgroundView.linearGradient)
         }
-        .aspectRatio(contentMode: .fit)
+        .aspectRatio(1, contentMode: .fit)
     }
 }
 
