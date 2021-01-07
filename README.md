@@ -13,9 +13,9 @@ https://developer.apple.com/tutorials/swiftui
 ![](Readme/Handling%20User%20Input.gif)
 
 ## Drawing and Animation
-- Creating and Combining Views ⬜
-- Drawing Paths and Shapes ⬜
-- Animating Views and Transitions ⬜
+- Drawing Paths and Shapes ✅<br>
+![](Readme/Drawing%20Paths%20and%20Shapes.png)
+<br><br>- Animating Views and Transitions ⬜
 
 ## App Design and Layout
 - Composing Complex Interfaces ⬜
