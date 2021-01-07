@@ -20,9 +20,8 @@ struct LandmarkListView: View {
                 
                 ForEach(filteredLandmarks) { landmark in
                     NavigationLink(
-                        destination: LandmarkDetailsView(
-                            landmark: landmark
-                        )
+                        destination: LandmarkDetailsView(landmark: landmark)
+                            .environmentObject(data)
                     ) {
                         LandmarkRowView(landmark: landmark)
                     }
