@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BadgeBackground: View {
+struct BadgeBackgroundView: View {
     var body: some View {
         GeometryReader { geometry in
             Path { path in
@@ -46,22 +46,20 @@ struct BadgeBackground: View {
                     )
                 }
             }
-            .fill(BadgeBackground.linearGradient)
+            .fill(BadgeBackgroundView.linearGradient)
         }
         .aspectRatio(contentMode: .fit)
     }
 }
 
 // MARK: - Private
-private extension BadgeBackground {
+private extension BadgeBackgroundView {
     
-    static let linearGradient: LinearGradient = {
-        LinearGradient(
-            gradient: BadgeBackground.gradient,
-            startPoint: UnitPoint(x: 0.5, y: 0),
-            endPoint: UnitPoint(x: 0.5, y: 0.6)
-        )
-    }()
+    static let linearGradient = LinearGradient(
+        gradient: BadgeBackgroundView.gradient,
+        startPoint: UnitPoint(x: 0.5, y: 0),
+        endPoint: UnitPoint(x: 0.5, y: 0.6)
+    )
     
     static let gradient: Gradient = {
         let start = Color(red: 239.0 / 255, green: 120.0 / 255, blue: 221.0 / 255)
@@ -72,6 +70,6 @@ private extension BadgeBackground {
 
 struct BadgeBackground_Previews: PreviewProvider {
     static var previews: some View {
-        BadgeBackground()
+        BadgeBackgroundView()
     }
 }
