@@ -31,15 +31,15 @@ struct HikeView: View {
                 Spacer()
                 
                 Button(action: {
-                    self.showDetail.toggle()
+                    withAnimation {
+                        showDetail.toggle()
+                    }
                 }) {
                     Image(systemName: "chevron.right.circle")
                         .imageScale(.large)
                         .rotationEffect(.degrees(showDetail ? 90 : 0))
-//                        .animation(nil)
                         .scaleEffect(showDetail ? 1.5 : 1)
                         .padding()
-//                        .animation(.spring())
                 }
             }
             
