@@ -42,7 +42,7 @@ struct MapView: View {
 }
 
 struct MapView_Previews: PreviewProvider {
-    static let data = LandmarksData()
+    static let data = ModelData()
     
     static var previews: some View {
         MapView(coordinates: data.landmarks[5].coordinates)

@@ -19,7 +19,7 @@ struct CircleImage: View {
 }
 
 struct CircleImage_Previews: PreviewProvider {
-    static let data = LandmarksData()
+    static let data = ModelData()
     
     static var previews: some View {
         CircleImage(imageName: data.landmarks[5].imageName)

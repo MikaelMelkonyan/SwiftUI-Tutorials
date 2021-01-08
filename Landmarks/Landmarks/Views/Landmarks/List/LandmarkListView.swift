@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LandmarkListView: View {
-    @EnvironmentObject private var data: LandmarksData
+    @EnvironmentObject private var data: ModelData
     @State private var showFavoritesOnly = false
     
     var body: some View {
@@ -50,7 +50,7 @@ struct LandmarkListView_Previews: PreviewProvider {
             "iPhone XS Max"
         ], id: \.self) {
             LandmarkListView()
-                .environmentObject(LandmarksData())
+                .environmentObject(ModelData())
                 .previewDevice(PreviewDevice(rawValue: $0))
                 .previewDisplayName($0)
         }

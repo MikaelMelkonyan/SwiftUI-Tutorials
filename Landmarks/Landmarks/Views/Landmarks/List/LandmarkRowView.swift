@@ -30,7 +30,7 @@ struct LandmarkRowView: View {
 }
 
 struct LandmarkRowView_Previews: PreviewProvider {
-    static let data = LandmarksData()
+    static let data = ModelData()
     
     static var previews: some View {
         Group {

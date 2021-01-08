@@ -7,12 +7,15 @@
 
 import Combine
 
-final class LandmarksData: ObservableObject {
+final class ModelData: ObservableObject {
     
     @Published var landmarks: [Landmark]
+    let hikes: [Hike]
+    
     private let loader = DataLoader()
     
     init() {
         landmarks = loader.load("landmarkData.json")
+        hikes = loader.load("hikeData.json")
     }
 }
