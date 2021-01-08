@@ -28,6 +28,8 @@ struct HikeGraph: View {
                         overallRange: overallRange
                     )
                     .colorMultiply(color)
+                    .transition(.slide)
+                    .animation(ripple(index: index))
                 }
                 .offset(x: 0, y: geometry.size.height * heightRatio)
             }
@@ -58,6 +60,12 @@ private extension HikeGraph {
         let low = ranges.lazy.map { $0.lowerBound }.min()!
         let high = ranges.lazy.map { $0.upperBound }.max()!
         return low..<high
+    }
+    
+    func ripple(index: Int) -> Animation {
+        Animation.spring(dampingFraction: 0.5)
+            .speed(2)
+            .delay(0.03 * Double(index))
     }
 }
 

@@ -10,7 +10,7 @@ import SwiftUI
 struct HikeView: View {
     
     let hike: Hike
-    @State private var showDetail = false
+    @State private var showDetail = true
     
     private let distanceFormatter = LengthFormatter()
     
@@ -61,7 +61,7 @@ extension HikeView {
     var moveAndFade: AnyTransition {
         let insertion = AnyTransition.move(edge: .trailing)
             .combined(with: .opacity)
-        let removal = AnyTransition.scale
+        let removal = AnyTransition.move(edge: .trailing)
             .combined(with: .opacity)
         return .asymmetric(insertion: insertion, removal: removal)
     }
