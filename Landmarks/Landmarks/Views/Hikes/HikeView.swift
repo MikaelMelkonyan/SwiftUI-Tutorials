@@ -45,6 +45,7 @@ struct HikeView: View {
             
             if showDetail {
                 HikeDetail(hike: hike)
+                    .transition(moveAndFade)
             }
         }
     }
@@ -55,6 +56,14 @@ extension HikeView {
     
     var distanceText: String {
         distanceFormatter.string(fromValue: hike.distance, unit: .kilometer)
+    }
+    
+    var moveAndFade: AnyTransition {
+        let insertion = AnyTransition.move(edge: .trailing)
+            .combined(with: .opacity)
+        let removal = AnyTransition.scale
+            .combined(with: .opacity)
+        return .asymmetric(insertion: insertion, removal: removal)
     }
 }
 
